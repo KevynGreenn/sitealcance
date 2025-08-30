@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcance Já - Biblioteca de PDFs Práticos</title>
+    <meta name="description" content="Guias diretos e acionáveis para emagrecer, ganhar massa, aprender inglês e montar planos alimentares." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a href="#inicio" class="skip-link">Ir para conteúdo</a>
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+            <a href="/" class="logo" aria-label="Página inicial Alcance Já">Alcance<span>Já</span></a>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+                </button>
+                <ul id="menu" class="nav-list">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#catalogo">Nosso Manual</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="#catalogo" class="btn cta-header">Ver Manual</a>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__text">
+                    <span class="hero__tagline">Sua jornada começa aqui</span>
+                    <h1>Biblioteca de PDFs Práticos</h1>
+                    <p class="hero__subtitle">Guias diretos e acionáveis para <strong>emagrecer</strong>, <strong>ganhar massa</strong>, <strong>aprender inglês</strong> e montar <strong>planos alimentares</strong> personalizados.</p>
+                    <div class="hero__cta">
+                        <a href="#catalogo" class="btn btn-primary">Explorar Catálogo</a>
+                        <a href="#catalogo" class="btn btn-secondary">Ver Manual</a>
+                    </div>
+                    <ul class="hero-bullets" aria-label="Benefícios">
+                        <li>Download imediato</li>
+                        <li>Atualizações gratuitas</li>
+                        <li>Conteúdo objetivo</li>
+                    </ul>
+                </div>
+                <div class="hero__visual">
+                    <div class="stack-covers" aria-hidden="true">
+                        <div class="cover-card c1"><span>PDF</span>Emagrecer em 8 Semanas</div>
+                        <div class="cover-card c2"><span>PDF</span>Ganho de Massa Limpo</div>
+                        <div class="cover-card c3"><span>PDF</span>Inglês Essencial</div>
+                        <div class="cover-card c4"><span>PDF</span>Plano Alimentar Smart</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogo" class="section catalog">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nosso Catálogo</h2>
+                    <p>Filtre por categoria ou explore todos os nossos guias práticos.</p>
+                </div>
+                <div class="catalog-tabs" role="tablist" aria-label="Categorias de PDFs">
+                    <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">Todos</button>
+                    <button class="tab" role="tab" aria-selected="false" data-filter="emagrecer">Emagrecer</button>
+                    <button class="tab" role="tab" aria-selected="false" data-filter="engordar">Ganhar Massa</button>
+                    <button class="tab" role="tab" aria-selected="false" data-filter="ingles">Inglês</button>
+                    <button class="tab" role="tab" aria-selected="false" data-filter="planos">Planos Alimentares</button>
+                </div>
+                <div class="products-grid" id="produtos">
+                    <article class="product-card" data-cat="emagrecer planos">
+                        <div class="pc-head">
+                            <span class="badge">Completo</span>
+                            <h3>Manual Fitness Completo</h3>
+                            <p>O guia definitivo com plano alimentar, treinos e dicas de motivação.</p>
+                        </div>
+                        <ul class="pc-meta">
+                            <li>Dieta de 1500 kcal</li>
+                            <li>Treino de 5 dias</li>
+                            <li>Bônus: Motivação</li>
+                        </ul>
+                        <div class="pc-foot">
+                            <span class="price-tag">R$ 47</span>
+                            <button class="btn btn-sm js-detail" data-id="manualFitness">Detalhes</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="section section-alt">
+            <div class="container faq-container">
+                <div class="section-header">
+                    <h2>Dúvidas Frequentes</h2>
+                    <p>Tudo o que você precisa saber antes de começar.</p>
+                </div>
+                <div class="faq">
+                    <article class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Como recebo os PDFs?</button>
+                        <div class="faq-a" hidden>Após a confirmação do pagamento, você receberá um e-mail com os links para download imediato de todo o material. Simples e rápido!</div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-q" aria-expanded="false">As atualizações são pagas?</button>
+                        <div class="faq-a" hidden>Não. Todas as futuras atualizações e revisões dos guias são gratuitas para quem já comprou. Você receberá as novas versões por e-mail, sem custo adicional.</div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-q" aria-expanded="false">Posso ler no celular e no computador?</button>
+                        <div class="faq-a" hidden>Sim! Nossos PDFs são otimizados para uma leitura confortável em qualquer dispositivo: celulares, tablets, e-readers ou computadores.</div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-q" aria-expanded="false">E se eu não gostar, tem garantia?</button>
+                        <div class="faq-a" hidden>Com certeza. Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta nos enviar um e-mail e reembolsamos 100% do valor.</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="modalDetalhe" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitulo">
+        <div class="modal__dialog">
+            <button class="modal__close" aria-label="Fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="modal-content">
+                <h3 id="modalTitulo">Título do Produto</h3>
+                <p class="modal-desc">Descrição completa do produto.</p>
+                <h4>O que você vai receber:</h4>
+                <ul class="modal-list"></ul>
+                <div class="modal-buy">
+                    <span class="price-tag price-lg">R$ --</span>
+                    <a href="#" class="btn btn-primary w-full">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal__backdrop" data-dismiss></div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-cols">
+                <div class="footer-col footer-brand">
+                    <a href="#inicio" class="logo" aria-label="Alcance Já - Início">Alcance<span>Já</span></a>
+                    <p>Guias práticos para resultados reais. Alcance seus objetivos de forma sustentável.</p>
+                    <ul class="social" aria-label="Redes sociais">
+                        <li><a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                        <li><a href="#" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 11.75a29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a></li>
+                        <li><a href="#" aria-label="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13 2 9l-2 9 9-4 9 9z"></path></svg></a></li>
+                    </ul>
+                </div>
+                <nav class="footer-col" aria-label="Navegação">
+                    <h3 class="foot-title">Mapa do Site</h3>
+                    <ul class="foot-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#catalogo">Nosso Manual</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-col" aria-label="Institucional">
+                    <h3 class="foot-title">Legal</h3>
+                    <ul class="foot-links">
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-col footer-news">
+                    <h3 class="foot-title">Receba Dicas</h3>
+                    <p class="mini">Conteúdo prático semanal para manter a constância.</p>
+                    <form class="newsletter" novalidate>
+                        <label class="visually-hidden" for="newsEmail">E-mail</label>
+                        <input id="newsEmail" type="email" placeholder="Seu melhor e-mail" required>
+                        <button class="btn btn-primary" type="submit">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-base">
+                <p>&copy; <span id="year"></span> Alcance Já. Todos os direitos reservados.</p>
+                <p class="mini muted">Feito com foco em hábitos sustentáveis.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
